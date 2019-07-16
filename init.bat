@@ -2,3 +2,5 @@
 
 choco install git
 choco install jre8
+
+echo "y" > initialized
