@@ -3,7 +3,7 @@
 choco install git
 choco install jre8
 
-echo "y" > initialized
+echo y > initialized
 
 echo IF EXIST "initialized" del “init.bat” > update.bat
 echo > update.bat
