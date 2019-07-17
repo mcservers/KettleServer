@@ -1,12 +1,11 @@
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 
-choco install git
-choco install jre8
+choco install git jre8
 
 echo true > initialized
 
 (
-echo IF EXIST "initialized" del “init.bat” > update.bat
+echo IF EXIST "initialized" del init.bat > update.bat
 echo > update.bat
 echo git pull > update.bat
 )>"update.bat"
