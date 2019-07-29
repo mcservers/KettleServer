@@ -8,6 +8,9 @@ wget https://github.com/KettleFoundation/Kettle/releases/download/vgit-HEAD-2579
 
 echo git-HEAD-2579c45-universal > version.txt
 
+echo choco uninstall git jre8 wget unzip maven gradle > uninstall.bat
+echo echo choco install git jre8 wget unzip maven gradle ^> reinstall.bat >> uninstall.bat
+
 echo IF EXIST "initialized" del init.bat > update.bat
 echo. >> update.bat
 echo git pull >> update.bat
